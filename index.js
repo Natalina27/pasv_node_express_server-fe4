@@ -8,9 +8,13 @@ app.get('/', home);
 app.get('/info',info);
 
 function home(req, res){
-    res.send('PASV!')
+    res.send('PASV.')
 }
 function info (req, res){
+    const a = 123;
+    const b = Math.random();
+    const c = a + b;
+    console.log(c);
     res.send('INFO here!')
 }
 
