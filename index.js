@@ -1,9 +1,21 @@
-const lodash = require('lodash');
+const express = require('express');
 
-const a = {
-    name: 'Joe'
-};
+const app = express();
 
-const b = lodash.get(a,'name', '---');
+const PORT = 5000;
 
-console.log('Hello', b);
+app.get('/', home);
+app.get('/info',info);
+
+function home(req, res){
+    res.send('PASV!')
+}
+function info (req, res){
+    res.send('INFO here!')
+}
+
+
+
+app.listen(PORT, () => {
+    console.log(`Example app listening at http://localhost:${PORT}`);
+});
