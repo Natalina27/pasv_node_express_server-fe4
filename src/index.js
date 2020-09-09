@@ -19,7 +19,6 @@ function info(req, res) {
     res.send('INFO here!');
 }
 
-
 app.listen(PORT, () => {
     console.log(`Example app listening at http://localhost:${PORT}`);
 });
