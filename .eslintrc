@@ -9,6 +9,7 @@
         "sourceType": "module"
     },
     "rules": {
+        "prittier/prittier": "error",
         "indent": [
             "error",
             4
