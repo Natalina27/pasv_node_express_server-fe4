@@ -1,35 +1,51 @@
 {
     "env": {
-        "browser": true,
-        "es2021": true
+        "es6": true,
+        "node": true
     },
-    "extends": [
-        "airbnb/base",
-        "eslint-config-prettier"
-    ],
-    "plugins": [
-        "eslint-plugin-prettier"
-    ],
+    "ecmaFeatures": {
+        "modules": true,
+        "spread": true
+    },
     "parserOptions": {
         "sourceType": "module"
     },
+    "extends": ["prettier"],
+    "plugins": ["prettier"],
     "rules": {
-        "prittier/prittier": "error",
+        "prettier/prettier": "error",
+        "no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "next"
+            }
+        ],
+        "arrow-parens": [2, "as-needed"],
+        "consistent-return": 0,
+        "no-invalid-this": 2,
+        "no-console": 0,
         "indent": [
             "error",
-            4
+            2,
+            {
+                "SwitchCase": 1
+            }
         ],
-        "linebreak-style": [
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "no-underscore-dangle": [
             "error",
-            "unix"
+            {
+                "allow": ["_id", "_doc"]
+            }
         ],
-        "quotes": [
+        "no-use-before-define": [
             "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
+            {
+                "functions": false,
+                "classes": true
+            }
         ]
     }
 }

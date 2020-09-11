@@ -1,7 +1,7 @@
-function apiNotFound(req, res){
-    res.status(400).json('API not found');
+function apiNotFound(req, res) {
+  res.status(400).json('API not found');
 }
 
-export function errorHandler(app){
-    app.use(apiNotFound);
+export function errorHandler(app) {
+  app.use(apiNotFound);
 }
