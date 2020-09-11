@@ -7,11 +7,15 @@ app.post('/info', info);//POST localhost:5000/info
 app.use(apiNotFound);
 
 function apiNotFound(req, res){
-    res.status(400).send('API not found');
+    res.status(400).json('API not found');
 }
 
 function home(req, res) {
-    res.send('PASV!');
+    res.status(200).json({
+        name: 'PASV',
+        components: ['abx', 'tree'],
+        q: true
+    });
 }
 
 function info(req, res) {
