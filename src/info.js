@@ -1,3 +1,6 @@
 export function info(req, res) {
-  res.send('INFO here!');
+  const a = req.body.a;
+  const b = req.body.b;
+  const sum = a + b;
+  res.send('INFO here!', sum);
 }

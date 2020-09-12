@@ -3,11 +3,13 @@ import { home } from './home';
 import { info } from './info';
 import { errorHandler } from './errorHandler';
 import logger from './logger';
+import bodyParse from './parseResponse';
 
 const app = express();
 const PORT = 5000;
 
 logger(app);
+bodyParse(app);
 app.get('/', home); //GET localhost:5000
 app.post('/info', info); //POST localhost:5000/info
 errorHandler(app);
