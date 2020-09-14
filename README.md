@@ -15,3 +15,4 @@ https://mongoosejs.com/docs/index.html
 ##READ!:
 https://mongoosejs.com/docs/connections.html
 https://mongoosejs.com/docs/guide.html
+https://mongoosejs.com/docs/models.html
