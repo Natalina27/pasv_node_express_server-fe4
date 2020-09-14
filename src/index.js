@@ -1,10 +1,10 @@
 import express from 'express';
-import { home } from './home';
-import info from './info';
-import { errorHandler } from './errorHandler';
-import logger from './logger';
-import parseResponse from './parseResponse';
-import cors from './cors';
+import { home } from './modules/home/home';
+import info from './modules/info/info';
+import { errorHandler } from './modules/cors/errorHandler';
+import logger from './modules/cors/logger';
+import parseResponse from './modules/cors/parseResponse';
+import cors from './modules/cors/cors';
 
 const app = express();
 const PORT = 5000;
