@@ -3,13 +3,10 @@
         "es6": true,
         "node": true
     },
-    "ecmaFeatures": {
-        "modules": true,
-        "spread": true
-    },
     "parserOptions": {
         "sourceType": "module"
     },
+    "parser": "babel-eslint",
     "extends": ["prettier"],
     "plugins": ["prettier"],
     "rules": {
@@ -20,7 +17,6 @@
                 "argsIgnorePattern": "next"
             }
         ],
-        "arrow-parens": [2, "as-needed"],
         "consistent-return": 0,
         "no-invalid-this": 2,
         "no-console": 0,
