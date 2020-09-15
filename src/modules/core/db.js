@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 function dbConnect() {
-  mongoose.connect('mongodb://localhost/test', {
+  mongoose.connect('mongodb://localhost/express', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
